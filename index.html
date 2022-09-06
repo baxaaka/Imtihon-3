@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts end -->
+
+    <title>Pizza</title>
+  </head>
+  <body>
+ 
+    <nav>
+      <div class="loader">
+        <span>Pitsa buyurtma qilish</span>
+        <span>Pitsa buyurtma qilish</span>
+      </div>
+    </nav>
+    <main>
+    <div class="container">
+      <div id="dropdown">
+        <h3>Noni qanday bolsin ?</h3>
+
+        <select>
+          <option value="Yupqa">Yupqa</option>
+          <option value="Ortacha">Ortacha</option>
+          <option value="Qalin">Qalin</option>
+        </select>
+
+        <!-- <div id="optionn">
+          Yupqa
+          </div>
+       
+
+          <div id="option2">
+            Ortacha
+          </div>
+        </div> -->
+      </div>
+
+      <div class="box-1">
+        <h3>Kattaligi</h3>
+
+        <form class="size">
+          <input class="in" type="radio" value="25sm" name="size" />
+          <span>25sm</span>
+          <input class="in2" type="radio" value="30sm" name="size" />
+          <span>30sm</span>
+
+          <input class="in3" type="radio" value="35sm" name="size" />
+          <span>35sm</span>
+        </form>
+      </div>
+
+      <div class="box-2">
+        <h3>Ustiga nima solaylik ?</h3>
+
+        <div class="chekk">
+          <div class="chek">
+            <input type="checkbox" class="pomidor">
+            <label value="Pomidor"> Pomidor</label>
+            <br />
+
+            <input type="checkbox" class="kurka"/>
+            <label value="Kurka goshti"> Kurka goshti</label><br />
+
+            <input type="checkbox" class="zaytun" />
+            <label value="Zaytun"> Zaytun</label><br />
+          </div>
+
+          <div class="chek-1">
+            <input type="checkbox" class="bodiring" />
+            <label value="TUzlangan bodiring"> Tuzlangan bodiring</label><br />
+
+            <input type="checkbox" class="qoziqorin" />
+            <label value="Qoziqorin"> Qoziqorin</label><br />
+
+            <input type="checkbox" class="qazi" />
+            <label> Qazi</label><br />
+          </div>
+        </div>
+      </div>
+
+      <h3>Qoshimchalar</h3>
+      <div class="box-3">
+        <br />
+        <br />
+        <div>
+          <input type="checkbox" class="achchiq"/>
+          <label > Achchiq</label> <br />
+        </div>
+        <div>
+          <input type="checkbox" class="sosiska" />
+          <label>Sosiskali</label><br />
+        </div>
+      </div>
+    </main>
+      <div class="container-2">
+        <div class="noni"></div>
+
+        <div class="size-result"></div>
+
+        <div class="chek-box"></div>
+
+        <div class="chek-box2"></div>
+
+        <div class="chek-box3"></div>
+
+        <div class="chek-box4"></div>
+
+        <div class="chek-box5"></div>
+
+        <div class="chek-box6"></div>
+
+
+
+        <div class="chek-box7"></div>
+
+
+        <div class="chek-box8"></div>
+
+        
+        
+
+      </div>
+    
+    </div>
+    </div>
+
+
+    <a href="#" class="js-open-modal" data-modal="1">Buyurtma berish</a>
+   
+    
+    <!-- Несколько модальных окон -->
+    
+    <div class="modal" data-modal="1">
+       <!--   Svg иконка для закрытия окна  -->
+       <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+       <p class="modal__title">Buyurtma muafaqqiyatli amalga oshdi</p>
+    </div>
+    
+  
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
+
+
+     <button onclick="btn()">
+      CLEAR
+     </button>
+  </body>
+  
+  <script src="./app.js"></script>
+</html>
